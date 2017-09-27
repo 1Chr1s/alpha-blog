@@ -4,8 +4,10 @@ Rails.application.routes.draw do
   #creates the route to 'pages/homepage' page
   #get 'pages/homepage', to: 'pages#homepage'
   root 'pages#homepage'
-
   #created the route to 'pages/about' page
   #get 'pages/about', to: 'pages#about'
   get 'about', to: 'pages#about'
+  #Created all paths (add,delete, edit, show, update)
+  resources :articles 
+
 end
