@@ -6,3 +6,10 @@
 <p>
 	Description: <%= @article.description %>
 </p>
+
+<!-- Adding link to be able to go back to the index page-->
+<%= link_to "Back to articles listing", articles_path %>
+<p>
+<!-- Linking to being able to edit post as well --> 
+<%= link_to  "Edit Posting", edit_article_path(@article)%>
+</p>

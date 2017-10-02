@@ -1,0 +1,36 @@
+<h1 style='color:red'>Listing all articles</h1>
+<p>
+<%= link_to "Create new article", new_article_path %>
+</p>
+
+<table>
+	<!--Table Row-->
+	<tr>
+		<!--Table header -->
+		<th>Title</th>
+		<th>Description</th>
+	</tr>
+	<!-- Editing and iterating through all of the articles -->
+	<tr>
+		<% @articles.each do |article| %>
+		<td>
+			<%= article.title %>
+		</td>
+		<td>
+			<%= article.description %>
+		</td>
+		<!-- Adding edit link to each article! -->
+		<td>
+			<%= link_to "Edit", edit_article_path(article) %>
+		</td>
+		<!-- Adding show link to each article!--> 
+		<td>
+			<%= link_to "Show", article_path(article) %>
+		</td>
+		<td>
+			<%= link_to "Delete", article_path(article), method: :delete, data:{confirm: "Are you sure?"} %>
+		</td>
+	</tr>
+	<% end %>
+
+</table>

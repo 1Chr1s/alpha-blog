@@ -10,11 +10,9 @@
   </head>
 
   <body>
-  	<%flash.each do |name, message|%>
-  	<ul>
-  		<li><%=message%></li>
-  	</ul>
-  	<%end%>
+  	<!-- Rendering to the _messages partial -->
+    <%= render 'layouts/messages' %>
     <%= yield %>
+
   </body>
 </html>
