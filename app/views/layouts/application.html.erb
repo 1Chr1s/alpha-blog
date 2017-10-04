@@ -1,4 +1,4 @@
-<!--This a wrapper file, so everything that is written here will be displayed on every page-->
+<!--This a wrapper file, so everything that is written here will be displayed on every page. The "Yield"lets you add the other content.-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,9 +10,13 @@
   </head>
 
   <body>
+    <!-- Rendering to the navigation -->
+    <%= render 'layouts/navigation' %>
   	<!-- Rendering to the _messages partial -->
     <%= render 'layouts/messages' %>
+    <div class="container">
     <%= yield %>
-
+    </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>

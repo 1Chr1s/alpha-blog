@@ -1,2 +1,75 @@
+/*Changing the color of the navbar*/
+$navbar-default-bg: black;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+#logo{
+	float:left;
+	font-size: 2.0em;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	color: #fff;
+	font-weight: bold;
+
+}
+/*Changes the color of the logo when hover over*/
+#logo:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*Changing the "center" div class from the homepage*/
+.center { 
+	text-align:center;
+}
+
+/*Customizing the jumbotron class in the homepage*/
+.jumbotron{ 
+	background-image:asset-url("maserati-gran-turismo.jpg");
+	background-size:cover;
+	height: 550px;
+}
+/*Customizing the h1 in the jumbotron class*/
+.jumbotron h1{ 
+	color:#fff;
+	text-align: center;
+	marigin-bottom: 30px;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+.btn-xlarge {
+font-size: 1.7em;
+background-color:black;
+
+}
+/*Customizing the footer*/
+footer { 
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: #777;
+}
+/* Setting some hover styling for the footer*/
+footer a:hover{ 
+	color: blue;
+}
+
+/*Styling for the small tag of the footer*/
+footer small{ 
+	float:left;
+}
+
+/*Styling for the footer list*/
+footer ul{ 
+	float: right;
+	list-style: none;
+}
+
+/*Styling for the individual list item*/
+footer ul li{ 
+	float: left;
+	margin-left: 15px;
+}

@@ -1,35 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>My Web Page</title>
-</head>
-<body>
-	<h1 align="center">Welcome to this cool site!</h1>
-	<!--Adding image to the web page (Ruby code)-->
-	<%= link_to image_tag('maserati-gran-turismo.jpg')%>
+<div class="center jumbotron">	
+	<h1>ALPHA BLOG</h1>
 
-    <div style="color:blue" style="float:left">
-	   <!--Unordered list of items(left side)-->
-		<ul>
-			<li>Software</li>
-			<li>Coolnese</li>
-			<li>Sickness</li>
-		</ul>
-		
-	</div>
-	<div style="color:red" style="float:right">
-		<!--Orddered list of items(Right Side)-->
-		<ol align="Right">
-			<li>Coffee</li>
-			<li>Pizza</li>
-			<li>Burgers</li>
-			<li>Fries</li>
-		</ol>
-	</div>
-	<div>
-		<!-- Linking to the about page and the articles path -->
-		<%= link_to "Alpha Blog", articles_path%> | <%= link_to "About", about_path%> 
-	</div>
-</body>
-
-</html>
+	<!-- Linking to the about page and the articles path -->
+	<%= link_to "Sign up now","#" , class: "btn btn-danger btn-lg btn-xlarge" %>
+	
